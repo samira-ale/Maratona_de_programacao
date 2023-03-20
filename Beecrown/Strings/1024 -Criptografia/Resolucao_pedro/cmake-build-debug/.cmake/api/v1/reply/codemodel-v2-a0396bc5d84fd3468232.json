@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Resolucao_pedro",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Resolucao_pedro::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Resolucao_pedro-Debug-6d0c60b8c0176e95ceff.json",
+					"name" : "Resolucao_pedro",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/pedro.netto/Desktop/OneDrive - Fatec Centro Paula Souza/Estudo/Maratona_de_programacao/Beecrown/Strings/1024 -Criptografia/Resolucao_pedro/cmake-build-debug",
+		"source" : "C:/Users/pedro.netto/Desktop/OneDrive - Fatec Centro Paula Souza/Estudo/Maratona_de_programacao/Beecrown/Strings/1024 -Criptografia/Resolucao_pedro"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
