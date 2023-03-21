@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Resolucao_pedro.exe"
+			"path" : "Pedro_Netto.exe"
 		},
 		{
-			"path" : "Resolucao_pedro.pdb"
+			"path" : "Pedro_Netto.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "Resolucao_pedro::@6890427a1f51a3e7e1df",
+	"id" : "Pedro_Netto::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Resolucao_pedro",
-	"nameOnDisk" : "Resolucao_pedro.exe",
+	"name" : "Pedro_Netto",
+	"nameOnDisk" : "Pedro_Netto.exe",
 	"paths" : 
 	{
 		"build" : ".",

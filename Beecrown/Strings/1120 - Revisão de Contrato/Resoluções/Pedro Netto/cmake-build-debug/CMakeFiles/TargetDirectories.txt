@@ -1,0 +1,3 @@
+C:/Users/pedro.netto/Desktop/OneDrive - Fatec Centro Paula Souza/Estudo/Maratona_de_programacao/Beecrown/Strings/1120 - Revisão de Contrato/Resoluções/Pedro Netto/cmake-build-debug/CMakeFiles/Pedro_Netto.dir
+C:/Users/pedro.netto/Desktop/OneDrive - Fatec Centro Paula Souza/Estudo/Maratona_de_programacao/Beecrown/Strings/1120 - Revisão de Contrato/Resoluções/Pedro Netto/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/pedro.netto/Desktop/OneDrive - Fatec Centro Paula Souza/Estudo/Maratona_de_programacao/Beecrown/Strings/1120 - Revisão de Contrato/Resoluções/Pedro Netto/cmake-build-debug/CMakeFiles/rebuild_cache.dir

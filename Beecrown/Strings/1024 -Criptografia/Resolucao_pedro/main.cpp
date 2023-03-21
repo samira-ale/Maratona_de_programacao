@@ -5,7 +5,6 @@ using namespace std;
 
 void encripted_text(string&);
 void first_pass(string&);
-void second_pass(string&);
 void third_pass(string&);
 bool is_upper_or_lower_alpha(char);
 
@@ -35,19 +34,32 @@ void encripted_text(string& text){
 }
 
 void first_pass(string& text){
-    for(char& character : text)
-        character += is_upper_or_lower_alpha(character) ?  3 : 0;
+    for(char& character : text) character += is_upper_or_lower_alpha(character) ?  3 : 0;
 }
 
-void second_pass(string& text){
+string& second_pass(string& text){
     reverse(text.begin(), text.end());
+
+    return text;
 }
 
-void third_pass(string& text){
-    for (int i = 0; i < text.size(); i++)
-        text[i] += i >= text.size() / 2 ? -1 : 0;
+int* third_pass(){
+
+    int* p = (int*)malloc(40);
+
+    *p = 1;
+
+    return p;
 }
 
 bool is_upper_or_lower_alpha(char character){
-    return (character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z');
+
+    int *vetor = third_pass();
+
+    cout << vetor[0];
+
+    for (int i = 0; i < 10; ++i) {
+        *(vetor + i) = i;
+    }
+
 }
