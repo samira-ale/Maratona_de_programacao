@@ -1,27 +1,37 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    unsigned long int digitWithProblem, originalNumber;
-    digitWithProblem = originalNumber = 0;
+    string problemDigit, originalValue;
 
-    while(digitWithProblem != 0 && originalNumber != 0)
-    {
-        cin >> digitWithProblem >> originalNumber;
+    while(true){
 
-        string strOriginalNumber = to_string(originalNumber);
+        cin >> problemDigit >> originalValue;
 
-        for (int i = 0; i < strOriginalNumber.size(); ++i) {
+        if(problemDigit == "0" && originalValue == "0") break;
 
-            if(strOriginalNumber[i] - '0' != digitWithProblem){
-                strOriginalNumber.erase(i, 1);
+        for (int i = 0; i < originalValue.size(); i++) {
+            if(originalValue[i] == problemDigit[0]){
+                originalValue.erase(i, 1);
+                i--;
             }
+
         }
 
-        cout << strOriginalNumber << endl;
-    }
+        if(originalValue.size() == 0)
+            originalValue = "0";
 
+        for (int i = 0; i < originalValue.size(); i++) {
+            if(originalValue[i] != '0' || originalValue.size() == 1) break;
+
+            originalValue.erase(i, 1);
+            i--;
+        }
+
+        cout << originalValue << endl;
+    }
     return 0;
 }
