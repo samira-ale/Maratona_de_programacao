@@ -3,12 +3,14 @@
 #include <algorithm>
 using namespace std;
 
-void encripted_text(string&);
-void first_pass(string&);
-void third_pass(string&);
+string get_encripted_text(const string&);
+string first_pass(const string&);
+string second_pass(string);
+string third_pass(string);
 bool is_upper_or_lower_alpha(char);
 
 int main(){
+
     int number_of_cases = 0;
     string text;
 
@@ -17,49 +19,45 @@ int main(){
 
     for (int i = 0; i < number_of_cases; i++)
     {
+
         getline(cin, text);
-
-        encripted_text(text);
-
-        cout << text << endl;
+        cout << get_encripted_text(text) << endl;
     }
+
 
     return 0;
 }
 
-void encripted_text(string& text){
-    first_pass(text);
-    second_pass(text);
-    third_pass(text);
+string get_encripted_text(const string& text){
+    string first_pass_value = first_pass(text);
+    string second_pass_value = second_pass(first_pass_value);
+    return third_pass(second_pass_value);
 }
 
-void first_pass(string& text){
-    for(char& character : text) character += is_upper_or_lower_alpha(character) ?  3 : 0;
-}
+string first_pass(const string& text){
 
-string& second_pass(string& text){
-    reverse(text.begin(), text.end());
+    string out_value;
 
-    return text;
-}
+    for(char character : text) out_value += is_upper_or_lower_alpha(character) ? (char)(character + 3) : (char)character;
 
-int* third_pass(){
-
-    int* p = (int*)malloc(40);
-
-    *p = 1;
-
-    return p;
+    return out_value;
 }
 
 bool is_upper_or_lower_alpha(char character){
-
-    int *vetor = third_pass();
-
-    cout << vetor[0];
-
-    for (int i = 0; i < 10; ++i) {
-        *(vetor + i) = i;
-    }
-
+    return (character >= 'a' && character <= 'z') ||
+           (character >= 'A' && character <= 'Z');
 }
+
+string second_pass(string text){
+    reverse(text.begin(), text.end()); 
+    return text;
+}
+
+string third_pass(string text){
+    string out_value = "";
+
+    for (int i = 0; i < text.size(); i++) out_value += i >= text.size() / 2 ? (char)(text[i] - 1) : text[i];
+    
+    return out_value;
+}
+
